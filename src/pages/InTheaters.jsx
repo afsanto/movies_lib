@@ -39,7 +39,7 @@ const InTheaters = () => {
   
     return (
       <div className="container">
-        <h2 className="title">Melhores filmes:</h2>
+        <h2 className="title">Filmes em Cartaz:</h2>
         <div className="movies-container">
           {inTheatersMovies.length > 0 &&
             inTheatersMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
