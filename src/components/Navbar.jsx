@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
+import { BiCameraMovie, BiSearchAlt2, BiFilm } from "react-icons/bi";
 
 import "../components/Navbar.css";
 
@@ -22,6 +22,11 @@ const Navbar = () => {
       <h2>
         <Link to="/">
           <BiCameraMovie /> MoviesLib
+        </Link>
+      </h2>
+      <h2>
+        <Link to="/movie/now-playing">
+          <BiFilm /> In Theaters
         </Link>
       </h2>
       <form onSubmit={handleSubmit}>

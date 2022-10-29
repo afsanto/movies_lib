@@ -9,9 +9,6 @@ import {
 } from "react-icons/bs";
 
 
-
-
-
 import MovieCard from "../components/MovieCard";
 
 import "./Movie.css";
@@ -44,7 +41,7 @@ const Movie = () => {
   };
 
   useEffect(() => {
-    const movieUrl = `${moviesURL}${id}?${apiKey}`;
+    const movieUrl = `${moviesURL}${id}?${apiKey}&language=pt-BR`;
     getMovie(movieUrl);
   }, []);
 
