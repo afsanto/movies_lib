@@ -30,7 +30,7 @@ const InTheaters = () => {
     };
   
     useEffect(() => {
-      const inTheatersUrl = `${moviesURL}?${apiKey}&language=pt-BR&region=US&with_release_type=3|2`;
+      const inTheatersUrl = `${moviesURL}?${apiKey}&language=pt-BR&region=BR&with_release_type=3|2`;
       console.log(inTheatersUrl);
       getInTheatersMovies(inTheatersUrl);
     }, []);
