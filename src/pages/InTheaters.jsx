@@ -30,7 +30,7 @@ const InTheaters = () => {
     };
   
     useEffect(() => {
-      const inTheatersUrl = `${moviesURL}?${apiKey}&language=pt-BR&region=US&with_release_type=3|2`;
+      const inTheatersUrl = `${moviesURL}?${apiKey}&language=pt-BR&region=BR&with_release_type=3|2`;
       console.log(inTheatersUrl);
       getInTheatersMovies(inTheatersUrl);
     }, []);
@@ -39,7 +39,7 @@ const InTheaters = () => {
   
     return (
       <div className="container">
-        <h2 className="title">Melhores filmes:</h2>
+        <h2 className="title">Filmes em Cartaz:</h2>
         <div className="movies-container">
           {inTheatersMovies.length > 0 &&
             inTheatersMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}

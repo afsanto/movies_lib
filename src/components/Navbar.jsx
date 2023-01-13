@@ -17,6 +17,20 @@ const Navbar = () => {
     setSearch("");
   };
 
+  const [searchSerie, setSearchSerie] = useState("");
+  const navigateSerie = useNavigate();
+
+  const handleSubmitSerie = (e) => {
+    e.preventDefault();
+
+    if (!searchSerie) return;
+
+    navigateSerie(`/searchserie?q=${searchSerie}`, { replace: true });
+    setSearchSerie("");
+  };
+
+ 
+
   return (
     <nav id="navbar">
       <h2>
@@ -39,6 +53,18 @@ const Navbar = () => {
         <button type="submit">
           <BiSearchAlt2 />
         </button>
+        </form>
+        <form onSubmit={handleSubmitSerie}>
+        <input
+          type="text"
+          placeholder="Busque uma série"
+          onChange={(e) => setSearchSerie(e.target.value)}
+          value={searchSerie}
+        />
+        <button type="submit">
+          <BiSearchAlt2 />
+        </button>
+
       </form>
     </nav>
   );
