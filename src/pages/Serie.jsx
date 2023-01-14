@@ -62,7 +62,7 @@ const Serie = () => {
             <h3>
               <BsHourglassSplit /> Duração:
             </h3>
-            <p>{serie.episode_run_time} minutos</p>
+            <p>{serie.episode_run_time[0]} minutos</p>
           </div>
           <div className="info">
             <h3>
