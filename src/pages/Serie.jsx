@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  BsGraphUp,
-  BsWallet2,
+  BsFillCameraReelsFill,
+  BsFlower3,
   BsHourglassSplit,
   BsFillFileEarmarkTextFill,
   BsCalendarDateFill,
@@ -68,6 +68,18 @@ const Serie = () => {
               <BsCalendarDateFill /> Data do último episódio:
             </h3>
             <p>{formatDate(serie.last_air_date)}</p>
+          </div>
+          <div className="info">
+            <h3>
+              <BsFillCameraReelsFill /> Número de episódios:
+            </h3>
+            <p>{serie.number_of_episodes}</p>
+          </div>
+          <div className="info">
+            <h3>
+              <BsFlower3 /> Número de temporadas:
+            </h3>
+            <p>{serie.number_of_seasons}</p>
           </div>
           <div className="info description">
             <h3>
