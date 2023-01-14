@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   BsFillCameraReelsFill,
+  BsFillPeopleFill,
   BsFlower3,
   BsHourglassSplit,
   BsFillFileEarmarkTextFill,
@@ -51,6 +52,12 @@ const Serie = () => {
         <>
           <SerieCard serie={serie} showLink={false} />
           <p className="tagline">{serie.tagline}</p>
+          <div className="info">
+            <h3>
+              <BsFillPeopleFill /> Série criada por:
+            </h3>
+            <p>{serie.created_by[0].name}</p>
+          </div>
           <div className="info">
             <h3>
               <BsHourglassSplit /> Duração:
