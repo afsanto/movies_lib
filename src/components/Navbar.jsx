@@ -61,8 +61,8 @@ const Navbar = () => {
           onChange={(e) => setSearchSerie(e.target.value)}
           value={searchSerie}
         />
-        <button type="submit">
-          <BiSearchAlt2 />
+        <button className="button" type="submit">
+          <BiSearchAlt2 className="lupa" />
         </button>
 
       </form>
