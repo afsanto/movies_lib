@@ -50,8 +50,8 @@ const Navbar = () => {
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
-        <button type="submit">
-          <BiSearchAlt2 />
+        <button className="button" type="submit">
+          <BiSearchAlt2 className="lupa" />
         </button>
         </form>
         <form onSubmit={handleSubmitSerie}>
