@@ -56,7 +56,7 @@ const Serie = () => {
             <h3>
               <BsFillPeopleFill /> Série criada por:
             </h3>
-            <p>{serie.created_by[0].name}</p>
+            <p>{serie.created_by[0]?.name}</p>
           </div>
           <div className="info">
             <h3>
