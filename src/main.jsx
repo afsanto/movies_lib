@@ -8,6 +8,7 @@ import Movie from "./pages/Movie" ;
 import Serie from './pages/Serie';
 import Search from "./pages/Search" ;
 import InTheaters from './pages/InTheaters';
+import InTvSeries from './pages/InTvSeries';
 import SearchSeries from './pages/SearchSeries';
 
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="movie/:id"  element={<Movie/>}/>
         <Route path="search"  element={<Search/>}/>
         <Route path="/movie/now-playing" element={<InTheaters/>}/>
+        <Route path="/serie/now-playing" element={<InTvSeries/>}/>
         <Route path="searchserie"  element={<SearchSeries/>}/>
         <Route path="serie/:id"  element={<Serie/>}/>
        </Route>
